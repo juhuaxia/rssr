@@ -1,0 +1,95 @@
+@import "./base.scss";
+
+header {
+    height: .9rem;
+    text-align: center;
+    line-height: .9rem;
+    color: #313131;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    font-size: .36rem;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: #fff;
+    z-index: 999;
+}
+
+header p {
+    width: 5.8rem;
+    height: .9rem;
+    margin-left: .8rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+header .backBtn {
+    font-size: .3rem;
+    color: #313131;
+    position: absolute;
+    left: .1rem;
+    top: .23rem;
+    padding-left: .5rem;
+    line-height: 1.5;
+}
+
+header .rightArea {
+    font-size: .3rem;
+    color: #313131;
+    position: absolute;
+    right: .26rem;
+    top: .28rem;
+    line-height: normal;
+    font-weight: 700;
+}
+
+header .more {
+    position: absolute;
+    right: .2rem;
+    top: .3rem;
+    color: #a16dcd;
+    font-weight: 100;
+    font-size: .3rem;
+}
+
+header .more-list {
+    position: absolute;
+    right: .2rem;
+    top: .95rem;
+    background-color: rgba(51, 51, 51, .95);
+    border-radius: 4px;
+}
+
+header .more-list .home:before {
+    margin-right: .1rem;
+    font-size: .28rem;
+}
+
+header .more-list .shopcart:before {
+    margin-right: .1rem;
+    font-size: .28rem;
+}
+
+header .more-list .personalCenter:before {
+    margin-right: .1rem;
+    font-size: .28rem;
+}
+
+header .more-list div {
+    font-size: .24rem;
+    padding: .2rem .6rem;
+    line-height: normal;
+    text-align: left;
+    display: block;
+}
+
+header .more-list div a {
+    color: #fff;
+}
+
+header .h-logo {
+    text-indent: -1000px;
+    /* background: url(../../public/images/new_index/logo@2x.png) no-repeat center center; */
+    background-size: 25%;
+}

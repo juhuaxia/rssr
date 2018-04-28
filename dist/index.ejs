@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        (function(win,doc){
+            var docEl = document.documentElement
+            var resizeEventName = "orientationchange" in win ? "orientationchange" : "resize"
+            var resizeHandle = function(){
+                var winWidth = docEl.clientWidth
+                if(!winWidth)return
+                docEl.style.fontSize = winWidth/7.5 + 'px'
+            }
+            if(!doc.addEventListener)return
+            win.addEventListener(resizeEventName, resizeHandle, false)
+            doc.addEventListener("DOMContentLoaded", resizeHandle, false)
+        })(window,document)
+    </script>
+    <title>Document</title>
+<link href="./index.css" rel="stylesheet"></head>
+<body>
+    <div id="app">
+        <%- root %>
+    </div>
+    <script>window.__initReduxState__ = <%- reduxState %></script>
+<script type="text/javascript" src="./js/vendors~index.e9fd7374513530d2aa22.js"></script><script type="text/javascript" src="./js/index.e9fd7374513530d2aa22.js"></script></body>
+</html>
